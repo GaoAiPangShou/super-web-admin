@@ -15,7 +15,7 @@ import java.sql.SQLException;
 @ConfigurationProperties(prefix = "spring.datasource.druid")
 public class DruidConfiguration {
 
-    private String url = "jdbc:mysql://118.89.164.186:3306/super_web_admin?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC";
+    private String url = "jdbc:mysql://118.89.164.186:3306/super_web_admin?useUnicode=true&characterEncoding=utf8";
 
     private String username = "root";
 
