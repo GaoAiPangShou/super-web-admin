@@ -1,0 +1,76 @@
+@import '~antd/dist/antd.css';
+
+.header {
+  height: 64px;
+  padding-left: 0;
+  background-color: rgba(69, 173, 252, 1);
+}
+
+.logo {
+  padding-left: 2em;
+  height: 64px;
+  line-height: 64px;
+  margin: 0;
+  // background: rgba(255,255,255,.2);
+  float: left;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  display: flex;
+
+  :first-child {
+    height: 75%;
+    width: 65px;
+    background: url(logo.svg) no-repeat top left;
+    background-size: contain;
+  }
+
+  .title {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+  }
+}
+
+.ant-layout {
+  min-height: calc(100vh - 64px);
+
+  .ant-layout-content {
+    padding: 20px;
+  }
+}
+
+
+.boss-header {
+  height: 64px;
+  padding-left: 0;
+  background-color: rgba(69, 173, 252, 1);
+
+  .logo {
+    width: 200px;
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    // background: rgba(255,255,255,.2);
+    float: left;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    display: flex;
+
+    img {
+      height: 75%;
+    }
+
+    .title {
+      margin-left: 10px;
+      font-size: 20px;
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
+
+.ant-layout-content {
+  overflow-y: hidden;
+}
