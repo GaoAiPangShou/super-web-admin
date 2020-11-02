@@ -25,7 +25,10 @@ import java.util.List;
  * Create by Muzi Li on 2019-07-25
  */
 @Configuration
-@PropertySource(value = {"classpath:boot.properties"})
+@ComponentScans(value = {
+        @ComponentScan("com.github.muzi.code.sp.web.admin"),
+})
+@PropertySource(value = {"classpath:boot.properties","classpath:config.properties"})
 public class WebConfiguration extends WebMvcConfigurationSupport {
 
     @Override
@@ -60,7 +63,10 @@ public class WebConfiguration extends WebMvcConfigurationSupport {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**")
+        registry.addResourceHandler("/resource/**")
+                .addResourceLocations("classpath:/static/resource/");
+
+        registry.addResourceHandler("/*.html")
                 .addResourceLocations("classpath:/static/");
     }
 

@@ -11,5 +11,20 @@
 
     <artifactId>super-web-admin-dao</artifactId>
 
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.muzi-code</groupId>
+            <artifactId>super-web-admin-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>
